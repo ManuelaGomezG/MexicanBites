@@ -1,0 +1,464 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+a,
+form,
+label,
+button,
+footer {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+body {
+    background-image: url(../img/diseñoFondo.png);
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 35px;
+    padding: 25px;
+}
+
+h2 {
+    color: black;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 50px;
+    padding: 35px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+/*Navbar*/
+
+.logo {
+    align-items: start;
+}
+
+nav {
+    background-color: #252525;
+    color: white;
+    padding: 10px;
+    list-style: none;
+    margin: auto;
+    text-align: center;
+    height: 90px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: rgb(231, 163, 61);
+    height: 40PX;
+}
+
+/*Title*/
+
+.hero {
+    background-image: url(../img/patternamarillo.jpg);
+    opacity: 0.99px;
+    text-align: center;
+}
+
+.hero img {
+    width: 200px;
+}
+
+/*Index FALTAAAA*/
+
+.intro p {
+   background-color: rgba(245, 158, 59, 0.425);
+    color: black;
+    text-align: center;
+    margin: 40px;
+    padding: 40px;
+}
+
+.box {
+    width: 300px;
+    height: 300px;
+    border: 2px solid white;
+    font-size: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   position: relative;
+}
+
+.box img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    position: absolute;
+    object-fit: cover;
+}
+
+.b1 {
+    
+    grid-area: a1;
+}
+
+.b2 {
+    
+    grid-area: a2;
+}
+
+.b3 {
+    
+    grid-area: a3;
+}
+
+.b4 {
+   
+    grid-area: a4;
+}
+
+.b5 {
+    
+    grid-area: a5;
+}
+
+.b6 {
+    
+    grid-area: a6;
+}
+
+.b7 {
+    
+    grid-area: a7;
+}
+
+.b8 {
+    
+    grid-area: a8;
+}
+
+.b9 {
+    
+    grid-area: a9;
+}
+
+.b10 {
+    
+    grid-area: a10;
+}
+
+.b11 {
+    background-color: rgb(236, 194, 194);
+    grid-area: a11;
+}
+
+.b12 {
+    
+    grid-area: a12;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3);
+    grid-template-rows: repeat(4);
+    gap: 10px;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    grid-template-areas:
+        "a1 a2 a3 "
+        "a4 a5 a6"
+        "a7 a8 a9"
+        "a10 a11 a12 ";
+}
+
+/*About us*/
+
+.about {
+    background-color: rgba(245, 158, 59, 0.425);
+    color: black;
+    text-align: center;
+    margin: 40px;
+    padding: 40px;
+}
+
+/*Products*/
+
+.product {
+    text-align: center;
+}
+
+.products {
+    width: 600px;
+    height: 400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cards {
+    background-color: rgba(245, 158, 59, 0.425);
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    padding: 30px;
+}
+
+.card {
+    width: 300px;
+    margin: 10px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.gallery img {
+    width: 300px;
+    border: solid white 5px;
+    border-radius: 10px;
+    box-shadow: 3px 5px 8px rgb(169, 168, 168);
+    margin: 10px;
+    position: relative;
+    opacity: .8;
+}
+
+.pic:hover {
+    width: 350px;
+    opacity: 1;
+    color: black;
+}
+
+.gallery span {
+    color: black;
+    font-size: 2rem;
+    display: flex;
+}
+
+.table {
+    background-color: rgba(245, 158, 59, 0.425);
+    color: black;
+    font-size: 20px;
+    width: 300px;
+    align-items: center;
+    text-align: center;
+    border: solid gray 2px;
+    margin: 50px auto;
+    display: block;
+}
+
+/*FAQ*/
+
+.faq {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.accordion { /*COMO PUEDO QUITAR LA FRANJA AZUL QUE SE GENERA AL DARLE CLICK A CADA PREGUNTA?*/
+    background-color: rgba(245, 158, 59, 0.425);
+    color: rgb(146, 146, 146);
+    min-width: 300px;
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+/*Contact-Form-Map*/
+
+.form {
+    background-color: rgba(245, 158, 59, 0.425);
+    color: black;
+    border-radius: 15px;
+    min-width: 250px;
+    max-width: 600px;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.emailCard {
+    background-color: rgba(254, 137, 3, 0.783);
+    font-weight: 700;
+    width: 350px;
+    text-align: center;
+    align-items: center;
+    margin: 50px auto;
+    padding: 100px;
+}
+
+.map {
+    width: 600px;
+    margin: 10px auto;
+}
+
+/*Social*/
+
+.social-container {
+    display: flex;
+    height: 130px;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-container ul li {
+    display: inline-block;
+    margin: 0 5px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+
+.social-container ul li a {
+    display: block;
+    padding: 0 10px;
+    background-color: #000000;
+    color: white;
+    line-height: 50px;
+    font-size: 18px;
+    box-shadow: 0 3px 5px 0 rgba(109, 24, 24, 0.2);
+    transition: 1s;
+}
+
+.social-container ul:hover a {
+    filter: blur(1px);
+    color: rgb(247, 175, 66);
+}
+
+.social-container ul li a:hover {
+    transform: translateY(-3px) scale(1);
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .4);
+    filter: none;
+}
+
+.social-container ul li .facebook:hover {
+    background: var(--facebook);
+}
+
+.social-container ul li .instagram:hover {
+    background: var(--instagram);
+}
+
+/*Button*/
+
+.button {
+    text-align: center;
+    padding: 30px;
+}
+
+.button a {
+    text-decoration: none;
+    color: black;
+}
+
+.button:hover {
+    text-decoration: underline;
+    color: rgb(229, 167, 52);
+    text-decoration: none;
+}
+ /*Footer*/
+
+footer {
+    background-image: url(../img/patternamarillo.jpg);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    height: 45px;
+    padding: 10px;
+}
+
+
+/*Media queries*/
+
+/*Index-Home*/
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(2);
+        grid-template-rows: repeat(6);
+        grid-template-areas:
+            "a1 a2"
+            "a3 a4"
+            "a5 a6"
+            "a7 a8"
+            "a9 a10"
+            "a11 a12";
+    }
+}
+@media (max-width: 480px) {
+    .grid {
+       display: flex;
+       flex-direction: column;
+    }
+}
+
+/*Product-Cards*/
+@media (max-width: 768px) { 
+    .cards {
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+    } 
+}
+@media (max-width: 480px) {/*COMO ARREGLO "THIS MONTHS BOX PARA Q QUEDE CENTRADA??*/
+    .cards {
+        flex-direction: column;
+}
+}
+
+/*Contact-Map*/
+@media (max-width: 748px) {
+    .map {
+       /*REAL LE PUSE TODO LO Q PUDE PARA ARREGLAR EL TAMAÑO.. HASTA MODIFICAR EL TAMAÑO DE LA IMAGEN PARA Q FUESE MAS PEQUEÑA Y PODER ACOMODARLA MAS FACIL Y NO PUDE .. ME PODRIAS AYUDAR PORFA??*/
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
