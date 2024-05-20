@@ -195,6 +195,12 @@ nav ul li a:hover {
     padding: 40px;
 }
 
+.carousel {
+    max-width: 800px;
+    min-height: 250px;
+    margin: 0 auto;
+}
+
 /*Products*/
 
 .product {
