@@ -81,14 +81,39 @@ nav ul li a:hover {
     width: 200px;
 }
 
-/*Index FALTAAAA*/
+/*Index*/
 
 .intro p {
-   background-color: rgba(245, 158, 59, 0.425);
+    background-color: rgba(245, 158, 59, 0.425);
     color: black;
     text-align: center;
     margin: 40px;
     padding: 40px;
+}
+
+.cardsContent {
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+
+}
+
+.cardsContent img {
+    max-width: 600px;
+    min-width: 250px;
+    max-height: 400px;
+
+}
+
+.cardContent {
+    background-color: rgba(4, 184, 249, 0.39);
+    color: #000000;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    gap: 15px;
 }
 
 .box {
@@ -99,7 +124,7 @@ nav ul li a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-   position: relative;
+    position: relative;
 }
 
 .box img {
@@ -111,52 +136,52 @@ nav ul li a:hover {
 }
 
 .b1 {
-    
+
     grid-area: a1;
 }
 
 .b2 {
-    
+
     grid-area: a2;
 }
 
 .b3 {
-    
+
     grid-area: a3;
 }
 
 .b4 {
-   
+
     grid-area: a4;
 }
 
 .b5 {
-    
+
     grid-area: a5;
 }
 
 .b6 {
-    
+
     grid-area: a6;
 }
 
 .b7 {
-    
+
     grid-area: a7;
 }
 
 .b8 {
-    
+
     grid-area: a8;
 }
 
 .b9 {
-    
+
     grid-area: a9;
 }
 
 .b10 {
-    
+
     grid-area: a10;
 }
 
@@ -166,7 +191,7 @@ nav ul li a:hover {
 }
 
 .b12 {
-    
+
     grid-area: a12;
 }
 
@@ -193,12 +218,6 @@ nav ul li a:hover {
     text-align: center;
     margin: 40px;
     padding: 40px;
-}
-
-.carousel {
-    max-width: 800px;
-    min-height: 250px;
-    margin: 0 auto;
 }
 
 /*Products*/
@@ -273,6 +292,13 @@ nav ul li a:hover {
     display: block;
 }
 
+.carousel {
+    max-width: 800px;
+    min-height: 250px;
+    padding: 25px;
+    margin: 0 auto;
+}
+
 /*FAQ*/
 
 .faq {
@@ -281,7 +307,7 @@ nav ul li a:hover {
     color: black;
 }
 
-.accordion { /*COMO PUEDO QUITAR LA FRANJA AZUL QUE SE GENERA AL DARLE CLICK A CADA PREGUNTA?*/
+.accordion {
     background-color: rgba(245, 158, 59, 0.425);
     color: rgb(146, 146, 146);
     min-width: 300px;
@@ -313,7 +339,8 @@ nav ul li a:hover {
 
 .map {
     width: 600px;
-    margin: 10px auto;
+    margin: 0px auto;
+    padding: 0 auto;
 }
 
 /*Social*/
@@ -367,20 +394,25 @@ nav ul li a:hover {
 
 .button {
     text-align: center;
-    padding: 30px;
+    margin: 25px;
+    padding: 25px;
 }
 
 .button a {
+    font-size: 1rem;
+    display: inline-block;
     text-decoration: none;
     color: black;
 }
 
-.button:hover {
+.button a:hover {
+    font-size: 1.3rem;
     text-decoration: underline;
     color: rgb(229, 167, 52);
     text-decoration: none;
 }
- /*Footer*/
+
+/*Footer*/
 
 footer {
     background-image: url(../img/patternamarillo.jpg);
@@ -407,64 +439,111 @@ footer {
             "a11 a12";
     }
 }
+
 @media (max-width: 480px) {
     .grid {
-       display: flex;
-       flex-direction: column;
+        display: flex;
+        flex-direction: column;
     }
 }
 
 /*Product-Cards*/
-@media (max-width: 768px) { 
+@media (max-width: 768px) {
     .cards {
         flex-wrap: wrap;
         flex-direction: row-reverse;
-    } 
+    }
 }
-@media (max-width: 480px) {/*COMO ARREGLO "THIS MONTHS BOX PARA Q QUEDE CENTRADA??*/
+
+@media (max-width: 480px) {
+
+    /*COMO ARREGLO "THIS MONTHS BOX PARA Q QUEDE CENTRADA??*/
     .cards {
         flex-direction: column;
-}
+    }
 }
 
 /*Contact-Map*/
 @media (max-width: 748px) {
     .map {
-       /*REAL LE PUSE TODO LO Q PUDE PARA ARREGLAR EL TAMAÑO.. HASTA MODIFICAR EL TAMAÑO DE LA IMAGEN PARA Q FUESE MAS PEQUEÑA Y PODER ACOMODARLA MAS FACIL Y NO PUDE .. ME PODRIAS AYUDAR PORFA??*/
+        /*REAL LE PUSE TODO LO Q PUDE PARA ARREGLAR EL TAMAÑO.. HASTA MODIFICAR EL TAMAÑO DE LA IMAGEN PARA Q FUESE MAS PEQUEÑA Y PODER ACOMODARLA MAS FACIL Y NO PUDE .. ME PODRIAS AYUDAR PORFA??*/
     }
 
 }
 
+/*cityContainer / traditionsContainer*/
+@media (max-width:1211px) {
+    .cardsContent img {
+        width: 250px;
+        display: block;
+        position: absolute;
+    }
 
+    .cardsContent p {
+        flex-wrap: wrap;
+        position: relative;
+        text-align: center;
+    }
+}
 
+@media (max-width:768px) {
+    .cardsContent img {
+        width: 250px;
+        display: block;
+        position: absolute;
+    }
 
+    .cardsContent p {
+        width: 550px;
+        flex-wrap: wrap;
+        position: relative;
+        text-align: center;
+    }
+}
 
+@media (max-width:620px) {
+    .cardsContent img {
+        width: 250px;
+        display: block;
+        position: absolute;
+    }
 
+    .cardsContent p {
+        width: 500px;
+        flex-wrap: wrap;
+        position: relative;
+        text-align: center;
 
+    }
+}
 
+@media (max-width:500px) {
+    .cardsContent img {
+        width: 250px;
+        display: block;
+        position: absolute;
+    }
 
+    .cardsContent p {
+        width: 400px;
+        flex-wrap: wrap;
+        position: relative;
+        text-align: center;git status
+    }
+}
 
+@media (max-width:430px) {
+    .cardsContent img {
+        width: 350px;
+        display: block;
+        position: absolute;
+    }
 
+    .cardsContent p {
+        width: 350px;
+        flex-wrap: wrap;
+        position: relative;
+        text-align: center;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    }
+}
