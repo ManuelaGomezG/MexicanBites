@@ -338,9 +338,9 @@ nav ul li a:hover {
 }
 
 .map {
-    width: 600px;
-    margin: 0px auto;
-    padding: 0 auto;
+    max-width: width: 600px;
+    min-width: 250px;
+    margin: 20px auto;
 }
 
 /*Social*/
