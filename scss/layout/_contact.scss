@@ -1,0 +1,27 @@
+/*Contact*/
+
+.form {
+    background-color: $secondaryColor;
+    color: $thirdColor;
+    border-radius: 15px;
+    min-width: 250px;
+    max-width: 600px;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.emailCard {
+    background-color: $maincolor;
+    font-weight: 700;
+    width: 350px;
+    text-align: center;
+    align-items: center;
+    margin: 50px auto;
+    padding: 100px;
+}
+
+.map {
+    max-width: 600px;
+    min-width: 250px;
+    margin: 20px auto;
+}

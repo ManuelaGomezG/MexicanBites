@@ -1,0 +1,176 @@
+/*Index*/
+
+h1,
+h2,
+h3,
+h4,
+p,
+a,
+form,
+label,
+button,
+footer {
+    font-family: $mainFont;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-image: url(../img/diseñoFondo.png);
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 35px;
+    padding: 25px;
+}
+
+h2 {
+    color: $thirdColor;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 50px;
+    padding: 35px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+.hero {
+    background-image: url(../img/patternamarillo.jpg);
+    opacity: 0.99px;
+    text-align: center;
+}
+
+.hero img {
+    width: 200px;
+}
+
+.intro p {
+    background-color: #f59e3b6c;
+    color: $thirdColor;
+    text-align: center;
+    margin: 40px;
+    padding: 40px;
+}
+
+.cardsContent {
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+}
+
+.cardsContent img {
+    max-width: 600px;
+    min-width: 250px;
+    max-height: 400px;
+}
+
+.cardContent {
+    background-color: $cardColor;
+    color: $thirdColor;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.box {
+    width: 300px;
+    height: 300px;
+    border: 2px solid white;
+    font-size: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.box img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    position: absolute;
+    object-fit: cover;
+}
+
+.b1 {
+
+    grid-area: a1;
+}
+
+.b2 {
+
+    grid-area: a2;
+}
+
+.b3 {
+
+    grid-area: a3;
+}
+
+.b4 {
+
+    grid-area: a4;
+}
+
+.b5 {
+
+    grid-area: a5;
+}
+
+.b6 {
+
+    grid-area: a6;
+}
+
+.b7 {
+
+    grid-area: a7;
+}
+
+.b8 {
+
+    grid-area: a8;
+}
+
+.b9 {
+
+    grid-area: a9;
+}
+
+.b10 {
+
+    grid-area: a10;
+}
+
+.b11 {
+    grid-area: a11;
+}
+
+.b12 {
+
+    grid-area: a12;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3);
+    grid-template-rows: repeat(4);
+    gap: 10px;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    grid-template-areas:
+        "a1 a2 a3 "
+        "a4 a5 a6"
+        "a7 a8 a9"
+        "a10 a11 a12 ";
+}

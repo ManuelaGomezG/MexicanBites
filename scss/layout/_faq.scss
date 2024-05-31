@@ -1,0 +1,15 @@
+/*FAQ*/
+
+.faq {
+    text-align: center;
+    text-decoration: none;
+    color: $thirdColor;
+}
+
+.accordion {
+    background-color: $maincolor;
+    color: rgb(146, 146, 146);
+    min-width: 300px;
+    max-width: 600px;
+    margin: 50px auto;
+}

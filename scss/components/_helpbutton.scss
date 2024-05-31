@@ -1,0 +1,22 @@
+/*HelpButton*/
+
+.button {
+    text-align: center;
+    margin: 25px;
+    padding: 25px;
+}
+
+.button a {
+    font-size: 1rem;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+}
+
+.button a:hover {
+    font-size: 1.3rem;
+    text-decoration: underline;
+    color: $maincolor;
+    text-decoration: none;
+}
+
