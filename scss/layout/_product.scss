@@ -14,7 +14,7 @@
 }
 
 .cards {
-    background-color: $secondaryColor;
+    background-color: rgba(245, 158, 59, 0.425);
     width: 100vw;
     display: flex;
     align-items: center;
@@ -49,18 +49,18 @@
 .pic:hover {
     width: 350px;
     opacity: 1;
-    color: $thirdColor;
+    color: black;
 }
 
 .gallery span {
-    color: $thirdColor;
+    color: black;
     font-size: 2rem;
     display: flex;
 }
 
 .table {
-    background-color: $maincolor;
-    color: $thirdColor;
+    background-color: rgba(245, 158, 59, 0.425);
+    color: black;
     font-size: 20px;
     width: 300px;
     align-items: center;
@@ -76,4 +76,3 @@
     padding: 25px;
     margin: 0 auto;
 }
-

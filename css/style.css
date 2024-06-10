@@ -12,7 +12,7 @@
 }
 
 nav {
-  background-color: rgba(245, 158, 59, 0.4235294118);
+  background-color: rgba(236, 170, 72, 0.4980392157);
   color: white;
   padding: 10px;
   list-style: none;
@@ -23,7 +23,7 @@ nav {
 
 nav ul li a:hover {
   text-decoration: underline;
-  color: #e7a33d;
+  color: #ecaa48;
   height: 40PX;
 }
 
@@ -42,18 +42,16 @@ footer {
   margin: 25px;
   padding: 25px;
 }
-
 .button a {
   font-size: 1rem;
   display: inline-block;
   text-decoration: none;
   color: black;
 }
-
 .button a:hover {
   font-size: 1.3rem;
   text-decoration: underline;
-  color: #e7a33d;
+  color: #ecaa48;
   text-decoration: none;
 }
 
@@ -64,16 +62,14 @@ footer {
   align-items: center;
   justify-content: center;
 }
-
-.social-container ul li {
+.social-container li {
   display: inline-block;
   margin: 0 5px;
   width: 50px;
   height: 50px;
   text-align: center;
 }
-
-.social-container ul li a {
+.social-container a {
   display: block;
   padding: 0 10px;
   background-color: #252525;
@@ -83,19 +79,14 @@ footer {
   box-shadow: 0 3px 5px 0 rgba(109, 24, 24, 0.2);
   transition: 1s;
 }
-
-.social-container ul:hover a {
-  filter: blur(1px);
-  color: #e7a33d;
-}
-
-.social-container ul li a:hover {
+.social-container a:hover {
+  color: #ecaa48;
   transform: translateY(-3px) scale(1);
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.4);
-  filter: none;
+  filter: blur(1px);
 }
 
-.social-container ul li .facebook:hover {
+.social-container ul li a .social-container ul li .facebook:hover {
   background: var(--facebook);
 }
 
@@ -114,7 +105,7 @@ form,
 label,
 button,
 footer {
-  font-family: "Poppins", sans-serif;
+  font-family: font-family "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -151,39 +142,25 @@ h4 {
   opacity: 0.99px;
   text-align: center;
 }
-
 .hero img {
   width: 200px;
 }
 
 .intro p {
-  background-color: rgba(245, 158, 59, 0.4235294118);
+  background-color: rgba(236, 170, 72, 0.4980392157);
   color: #252525;
   text-align: center;
   margin: 40px;
   padding: 40px;
 }
 
-.cardsContent {
-  width: 90%;
-  margin: 20px auto;
+.col {
+  justify-content: space-evenly;
   display: flex;
 }
 
-.cardsContent img {
-  max-width: 600px;
-  min-width: 250px;
-  max-height: 400px;
-}
-
-.cardContent {
-  background-color: rgba(0, 191, 255, 0.374);
-  color: #252525;
-  padding: 15px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 15px;
+.card h-100 {
+  align-content: center;
 }
 
 .box {
@@ -196,7 +173,6 @@ h4 {
   justify-content: center;
   position: relative;
 }
-
 .box img {
   width: 100%;
   height: 100%;
@@ -266,7 +242,7 @@ h4 {
 
 /*About us*/
 .about {
-  background-color: rgba(245, 158, 59, 0.4235294118);
+  background-color: rgba(236, 170, 72, 0.4980392157);
   color: #252525;
   text-align: center;
   margin: 40px;
@@ -288,7 +264,7 @@ h4 {
 }
 
 .cards {
-  background-color: #e7a33d;
+  background-color: rgba(245, 158, 59, 0.425);
   width: 100vw;
   display: flex;
   align-items: center;
@@ -322,18 +298,18 @@ h4 {
 .pic:hover {
   width: 350px;
   opacity: 1;
-  color: #252525;
+  color: black;
 }
 
 .gallery span {
-  color: #252525;
+  color: black;
   font-size: 2rem;
   display: flex;
 }
 
 .table {
-  background-color: #e7a33d;
-  color: #252525;
+  background-color: rgba(245, 158, 59, 0.425);
+  color: black;
   font-size: 20px;
   width: 300px;
   align-items: center;
@@ -358,7 +334,7 @@ h4 {
 }
 
 .accordion {
-  background-color: #e7a33d;
+  background-color: #ecaa48;
   color: rgb(146, 146, 146);
   min-width: 300px;
   max-width: 600px;
@@ -367,8 +343,8 @@ h4 {
 
 /*Contact*/
 .form {
-  background-color: rgba(245, 158, 59, 0.4235294118);
-  color: #252525;
+  background-color: rgba(245, 158, 59, 0.425);
+  color: black;
   border-radius: 15px;
   min-width: 250px;
   max-width: 600px;
@@ -377,7 +353,7 @@ h4 {
 }
 
 .emailCard {
-  background-color: #e7a33d;
+  background-color: rgba(254, 137, 3, 0.783);
   font-weight: 700;
   width: 350px;
   text-align: center;
@@ -415,76 +391,10 @@ h4 {
   }
 }
 @media (max-width: 480px) {
-  /*COMO ARREGLO "THIS MONTHS BOX PARA Q QUEDE CENTRADA??*/
   .cards {
     flex-direction: column;
   }
 }
-/*Contact-Map*/
-/*cityContainer / traditionsContainer*/
-@media (max-width: 1211px) {
-  .cardsContent img {
-    width: 250px;
-    display: block;
-    position: absolute;
-  }
-  .cardsContent p {
-    flex-wrap: wrap;
-    position: relative;
-    text-align: center;
-  }
-}
-@media (max-width: 768px) {
-  .cardsContent img {
-    width: 250px;
-    display: block;
-    position: absolute;
-  }
-  .cardsContent p {
-    width: 550px;
-    flex-wrap: wrap;
-    position: relative;
-    text-align: center;
-  }
-}
-@media (max-width: 620px) {
-  .cardsContent img {
-    width: 250px;
-    display: block;
-    position: absolute;
-  }
-  .cardsContent p {
-    width: 500px;
-    flex-wrap: wrap;
-    position: relative;
-    text-align: center;
-  }
-}
-@media (max-width: 500px) {
-  .cardsContent img {
-    width: 250px;
-    display: block;
-    position: absolute;
-  }
-  .cardsContent p {
-    width: 400px;
-    flex-wrap: wrap;
-    position: relative;
-    text-align: center;
-  }
-}
-@media (max-width: 430px) {
-  .cardsContent img {
-    width: 350px;
-    display: block;
-    position: absolute;
-  }
-  .cardsContent p {
-    width: 350px;
-    flex-wrap: wrap;
-    position: relative;
-    text-align: center;
-  }
-}
+/*Cities-Traditions*/
 
 /*# sourceMappingURL=style.css.map */

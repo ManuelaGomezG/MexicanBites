@@ -1,8 +1,8 @@
 /*Contact*/
 
 .form {
-    background-color: $secondaryColor;
-    color: $thirdColor;
+    background-color: rgba(245, 158, 59, 0.425);
+    color: black;
     border-radius: 15px;
     min-width: 250px;
     max-width: 600px;
@@ -11,7 +11,7 @@
 }
 
 .emailCard {
-    background-color: $maincolor;
+    background-color: rgba(254, 137, 3, 0.783);
     font-weight: 700;
     width: 350px;
     text-align: center;
